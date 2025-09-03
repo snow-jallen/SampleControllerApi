@@ -1,0 +1,40 @@
+@WebApplication1_HostAddress = http://localhost:5094
+
+GET {{WebApplication1_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{WebApplication1_HostAddress}}/weatherforecast/moar
+Accept: application/json
+
+###
+
+POST {{WebApplication1_HostAddress}}/users
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Francine Doe",
+  "age": 30,
+  "id": -23
+}
+
+###
+
+GET {{WebApplication1_HostAddress}}/users
+Accept: application/json
+
+###
+
+
+DELETE {{WebApplication1_HostAddress}}/users/2
+Accept: application/json
+
+###
+
+
+DELETE {{WebApplication1_HostAddress}}/users/Francine%20Doe
+Accept: application/json
+
+###
